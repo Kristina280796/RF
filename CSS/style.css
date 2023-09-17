@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("../fonts/BebasNeueBook.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+.body{
+  font-family: 'Noto Sans', sans-serif;
+}
+.container{
+  max-width: 1440px;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 94px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.20);
+  transition: background-color, 1s;
+}
+.navbar-light{
+  background: #fff;
+  color: #292D33;
+}
+.navbar-light .header-logo-path{
+  fill:#292D33;
+}
+.header{
+  padding-top: 94px;
+  min-height: 100vh;
+}
+.header-image{
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.header-image::before {
+  content:"" ;
+  position: absolute;
+  background-color:rgba(41, 45, 51, 0.60); ;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.header-logo{
+  padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.20);
+  height: 100%;
+}
+.header-nav {
+  flex-basis: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0 50px;
+  margin: 0%;
+}
+.header-nav-link {
+  color :inherit;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 50px;
+}
+.header-phone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
+
+}
+.header-phone-link{
+  text-decoration: none;
+  font-size: 16px;
+  color :inherit;
+}
+.button{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  color:#FFFFFF ;
+  background: #3A71D1;
+  padding: 25px 60px;
+  display: inline-block;
+  cursor: pointer;
+ 
+  border: none;
+  
+}
+.navbar-button{
+  flex-shrink: 0;
+  height: 100%;
+}
+.header-button {
+  height: 100%;
+}
+.seporator {
+  background: #5C8EE5;
+  width: 150px;
+  height: 2px;
+}
+.header-content{
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  color:#fff
+}
+.header-title {
+  max-width: 1080px;
+  font-family: "Bebas Neue Book";
+  font-size: 80px;
+  line-height: 120%;
+  margin: 30px 0;
+}
+.header-text{
+  max-width: 720px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 50px;
+}
+.header-features{
+  display: flex;
+  min-height: 168px;
+  padding: 0%;
+  margin-top: 100px;
+  list-style: none;
+  color: #fff;
+  position: relative;
+  
+}
+.header-features-item{
+  padding: 30px 50px;
+  border: 1px solid rgba(235, 235, 240, 0.20);
+  
+}
+.header-features-text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.header-features-item:not(:last-child){
+  border-right:none;
+}
+.section-title{
+  font-family: "Bebas Neue Book";
+  color: #292D33;
+  font-size: 60px;
+  line-height: 120%;
+  width: 700px;
+  height: 72px;
+}
+.steps-item{
+  width: 330px;
+  height: 267px;
+ 
+}
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0%;
+  gap: 30px;
+}
+.steps-num {
+  color: #5C8EE5;
+  font-size: 48px;
+  line-height: 120%;
+  font-family: "Bebas Neue Book";
+  display: flex;
+  align-items: center;
+}
+ .steps-num::after{
+  content:"";
+  height: 1px;
+  background:#EBEBF0;
+  width: 100%;
+  margin-left: 30px;
+  
+ }
+.steps-title {
+  color:#292D33;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+}
+.steps-text {
+  color: #828A99;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.steps-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5C8EE5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
+.steps-link::before {
+  content: "";
+  height: 1px;
+  background: #5C8EE5;
+  width: 40px;
+  margin-right: 20px;
+
+}
